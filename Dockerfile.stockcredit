@@ -1,0 +1,24 @@
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS BASE
+WORKDIR /app
+EXPOSE 8080
+
+FROM mcr.microsoft.com/dotnet/sdk:8.0 as build
+ARG BUILD_CONFIGURATION=Release
+WORKDIR /src
+COPY ["StockCredit.API/StockCredit.API.csproj", "StockCredit.API/"]
+
+RUN dotnet restore "StockCredit.API/StockCredit.API.csproj"
+
+COPY . .
+
+WORKDIR "/src/StockCredit.API"
+
+RUN dotnet build "StockCredit.API.csproj" -c $BUILD_CONFIGURATION -o /app/build
+FROM build AS publish
+ARG BUILD_CONFIGURATION=Release
+RUN dotnet publish "StockCredit.API.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet" ,"StockCredit.API.dll"]

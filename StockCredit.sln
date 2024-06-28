@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockCredit.API", "StockCredit.API\StockCredit.API.csproj", "{5F5F6A3B-0A19-456B-AEC2-BC62168BF84E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockCredit.Tests", "StockCredit.Tests\StockCredit.Tests.csproj", "{974C13EB-147F-478B-BCF9-BF32EE34A71F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OAuth", "OAuth\OAuth.csproj", "{5822E6BA-8591-460F-B178-E1F70C922A2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F5F6A3B-0A19-456B-AEC2-BC62168BF84E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F5F6A3B-0A19-456B-AEC2-BC62168BF84E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F5F6A3B-0A19-456B-AEC2-BC62168BF84E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F5F6A3B-0A19-456B-AEC2-BC62168BF84E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{974C13EB-147F-478B-BCF9-BF32EE34A71F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{974C13EB-147F-478B-BCF9-BF32EE34A71F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{974C13EB-147F-478B-BCF9-BF32EE34A71F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{974C13EB-147F-478B-BCF9-BF32EE34A71F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5822E6BA-8591-460F-B178-E1F70C922A2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5822E6BA-8591-460F-B178-E1F70C922A2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5822E6BA-8591-460F-B178-E1F70C922A2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5822E6BA-8591-460F-B178-E1F70C922A2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
